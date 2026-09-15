@@ -1,0 +1,20 @@
+webframe provides CMake imported targets for server and desktop (Windows only) runtimes.
+
+Usage in CMakeLists.txt:
+
+    find_package(webframe CONFIG REQUIRED)
+
+    # Link against the server runtime (all platforms)
+    target_link_libraries(my_target PRIVATE webframe::server)
+
+    # Link against the desktop runtime (Windows only)
+    if(WIN32)
+        target_link_libraries(my_target PRIVATE webframe::desktop)
+    endif()
+
+Use the WEBFRAME_MAIN macro in your application entry point:
+
+    #include <webframe.hpp>
+    WEBFRAME_MAIN(MyApplication)
+
+For more information, visit: https://github.com/maxtek6/WebFrame

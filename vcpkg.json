@@ -1,0 +1,15 @@
+{
+    "name": "webframe-oidc-example",
+    "version": "0.1.0",
+    "description": "WebFrame external login example",
+    "homepage": "https://github.com/johnpatek/webframe-oidc-example",
+    "license": "MIT",
+    "dependencies": [
+        "argparse",
+        "hyperpage",
+        "megamimes",
+        "sqlite3",
+        "unqlite",
+        "webframe"
+    ]
+}
